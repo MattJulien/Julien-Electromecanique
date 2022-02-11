@@ -5,8 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=(device-width), initial-scale=1.0">
     <title>Dépannage et réfection de machines industrielles - JULIEN ELECTROMECANIQUE</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./ressources/images/LOGO JEM.png" alt="Logo Julien Electromecanique"></a>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li class="accueil"><a href="index.html">Accueil</a></li>
+                <li class="description"><a href="#top">Description</a></li>
+                <li class="competence"><a href="#competences">Compétences</a></li>
+                <li class="contact"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slideshow-container" id="description">
+
+        <!-- SlideShow -->
+
+        <div class="slides fade">
+            <img src="./ressources/images/Engrenages VERNIER.JPG" alt="Boite d'avances de fraiseuse">
+            <div class="text">
+                <span>Depannage mécanique et électrique</span>
+                <p>Nous dépannons la plupart des machines industrielles, effectuons le diagnostique de panne et la fiabilisation.</p> 
+            </div>
+            
+        </div>
+        <div class="slides fade">
+            <img src="./ressources/images/Armoire REYNARD.JPG" alt="Armoire electrique">
+            <div class="text">
+                <span>Câblage d'armoires</span>
+                <p>Realisation d'armoires selon cahier des charges, réfection d'armoires existantes et travaux neufs.</p> 
+            </div>
+        </div>
+        <div class="slides fade">
+            <img src="./ressources/images/IMG_1594.JPG" alt="Vérins pneumatiques">
+            <div class="text">
+                <span>Refection d'actionneurs</span>
+                <p>Dépose, réparation et remontage de moteurs, materiel pneumatique et hydraulique.</p> 
+            </div>
+
+        </div>
+
+        <!-- Next & Previous Btns-->
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+        <!--Dots-->
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>                    
+            <span class="dot" onclick="currentSlide(3)"></span>                
+        </div>
+
+    <script src="./JavaScript.js"></script>
+
+    <hr id="competences">
+
+    <section class="presentation">
+        <article class="who">
+            <h2 class="who">Nos compétences</h2>
+            <p class="who">La société Julien Electromécanique est implantée à Chadernolles (63940 Marsac-en-Livradois)
+            et possède un atelier à Ambert (63600). Elle est spécialisée dans le <strong>dépannage industriel</strong> et la <strong>réfection de machines industrielles</strong>. 
+            </p>
+        </article>
+        <div class="cablage competence">
+            <img src="./ressources/images/Cablage.JPG" alt="cablâge industriel">
+            <h3>Cablâge et dépannage d'armoires</h3>
+            <p>Réalisation de schémas électriques <br> dépannage d'armoires et câblage d'armoires neuves</p>
+        </div>
+        <div class="automatisme competence">
+            <img src="./ressources/images/PID FAV.JPG" alt="Automatisme industriel">
+            <h3>Automatisme industriel</h3>
+            <p>Programmation Siemens et Omron, PID, régulation</p>
+        </div>
+        <div class="mecanique competence">
+            <img src="./ressources/images/Boite de vitesse.JPG" alt="Mecanique sur machine outil">
+            <h3>Réfection mécanique</h3>
+            <p>Diagnostique de panne mécanique et réparation</p>
+        </div>
+        <div class="soudure competence">
+            <img src="./ressources/images/Chassis.JPG" alt="soudure de châssis">
+            <h3>Soudure selon plans</h3>
+            <p>Réalisation de châssis mécanosoudés</p>
+        </div>
+    </section>
+
+    <hr>
+    <footer>
+        <div class="footer-top">
+            <div class="logo">
+                <img src="./ressources/images/LOGO JEM.png" alt="Logo Julien Electromecanique">
+            </div>
+            <div class="infos">
+                <h3>Informations</h3>
+                <h4><a href="#">Mentions légales</a></h4>
+                <h4><a href="#">Politique de confidentialité</a></h4>
+            </div>
+            <div class="coordonnees">
+                <h3>Nous contacter</h3>
+                <p class="contact">Julien Electromecanique <br>LD Chadernolles <br> 63940, Marsac-en-Livradois <br> 06.25.09.93.11</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <h6>© Julien Electromecanique 2022</h6>
+        </div>
+    </footer>
 </body>
 </html>

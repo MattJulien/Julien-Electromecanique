@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+header .logo img {
+    height: 150px;
+    margin-left: 50px;
+}
+
+header .navbar {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav a {
+    color: #ff914d;
+    text-decoration: none;
+}
+
+header nav li {
+    display: inline;
+    margin-right: 50px;
+    padding: 10px;
+    border-radius: 10%;
+    font-family: "Oswald", sans-serif;
+}
+
+header nav li:hover {
+    background-color: #03224c;
+    transition: 0.6s;
+}
+
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    margin-top: 170px;
+}
+
+.slides {
+    display: none;
+    height: 500px;
+    width: 100%;
+}
+
+.slides img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "Oswald", sans-serif;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    bottom: 25.6%;
+}
+
+.text p {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    text-align: left;
+    width: 50%;
+    margin-left: auto;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+.dots {
+    text-align: center;
+}
+
+
+.dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+      background-color: #717171;
+}
+
+.fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+hr{
+    height: 1px;
+    width: 45%;
+    margin: 30px auto;
+    
+} 
+
+.presentation {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+}
+
+.presentation img {
+    max-width: 700px; 
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.presentation .who p {
+    margin: 30px 20%;
+    line-height: 25px;
+}
+
+.presentation .competence {
+    margin: 30px 5px;
+    max-width: 500px;
+    height: 700px;
+}
+
+footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0 100px;
+    text-align: center;
+}
+
+footer .footer-top a {
+    text-decoration: none;
+}
+
+footer .logo img{
+    height: 200px;
+    width: 200px;
+}
+
+footer h3 {
+    font-family: "Oswald", sans-serif;
+}
