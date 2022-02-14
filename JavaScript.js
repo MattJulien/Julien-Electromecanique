@@ -26,3 +26,10 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+document.querySelector('#contact-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  e.target.elements.name.value = '';
+  e.target.elements.email.value = '';
+  e.target.elements.message.value = '';
+});
